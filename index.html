@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIGNALINK MVP-3A — Audio → Haptic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><p class="eyebrow">SIGNALINK · MVP-3A</p><h1>Audio → Haptic</h1><p>Non-visual accessibility test space for mapping audio activity to tactile feedback.</p></header>
+<section class="card">
+<div class="row"><button id="start">START AUDIO ANALYSIS</button><button id="stop" class="secondary" disabled>STOP</button></div>
+<div class="stats"><div><strong id="level">0%</strong><small>AUDIO LEVEL</small></div><div><strong id="frequency">—</strong><small>DOMINANT FREQUENCY</small></div><div><strong id="pattern">IDLE</strong><small>HAPTIC PATTERN</small></div></div>
+<div class="meter"><span id="meterFill"></span></div>
+<p id="status">Microphone inactive.</p>
+</section>
+<section class="card"><p class="eyebrow">SIMULATED ACTUATOR</p><div id="pulse" class="pulse"></div><p id="hapticText">Waiting for an audio event.</p></section>
+<footer>Web Audio FFT · Browser vibration API · No hardware</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
